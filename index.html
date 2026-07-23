@@ -22,12 +22,15 @@ padding:20px;
 .top{
 display:flex;
 align-items:center;
-justify-content:space-around;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
 }
 
 .top img{
-width:200px;
-height:100px;
+width:100%;
+max-width:320px;
+height:auto;
 border-radius:10px;
 }
 
@@ -81,15 +84,15 @@ margin-top:20px;
 }
 
 .info img{
-width:350px;
+display:block;
+width:100%;
+max-width:350px;
+height:auto;
+margin:0 auto 20px auto;
 border-radius:10px;
-float:left;
-margin-right:20px;
 }
 
-.clear{
-clear:both;
-}
+
 
 .section{
 background:white;
@@ -181,7 +184,7 @@ text-decoration:none;
 
 <div class="info">
 
-<img src="school.jpg">
+<img src="school.jpg" >
 
 <h2>مرحباً بكم في مدرسة الشعب</h2>
 
@@ -195,7 +198,6 @@ text-decoration:none;
 
 </p>
 
-<div class="clear"></div>
 
 </div>
 
