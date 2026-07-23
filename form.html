@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نموذج تسجيل طالب</title>
+
+<style>
+
+body{
+    font-family:Tahoma;
+    margin:0;
+    background:#eef3f7;
+}
+
+header{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#0b7d3b;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.container{
+    width:60%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+label{
+    font-weight:bold;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+.radio, .check{
+    width:auto;
+}
+
+.buttons{
+    text-align:center;
+}
+
+.buttons input{
+    width:150px;
+    background:#006400;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#006400;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>نموذج تسجيل طالب</h1>
+
+</header>
+
+<nav>
+
+<a href="index.html">الرئيسية</a>
+
+<a href="primary.html">الابتدائية</a>
+
+<a href="middle.html">الإعدادية</a>
+
+<a href="secondary.html">الثانوية</a>
+
+</nav>
+
+<div class="container">
+
+<form>
+
+<label>اسم الطالب</label>
+
+<input type="text" placeholder="اكتب اسمك">
+
+<label>العمر</label>
+
+<input type="number">
+
+<label>الجنس</label><br>
+
+<input class="radio" type="radio" name="gender"> ذكر
+
+<input class="radio" type="radio" name="gender"> أنثى
+
+<br><br>
+
+<label>المرحلة الدراسية</label>
+
+<select>
+
+<option>المرحلة الابتدائية</option>
+
+<option>المرحلة الإعدادية</option>
+
+<option>المرحلة الثانوية</option>
+
+</select>
+
+<label>الهوايات</label><br>
+
+<input class="check" type="checkbox"> القراءة
+
+<input class="check" type="checkbox"> الرياضة
+
+<input class="check" type="checkbox"> الحاسوب
+
+<br><br>
+
+<label>ملاحظات</label>
+
+<textarea rows="5"></textarea>
+
+<div class="buttons">
+
+<input type="submit" value="إرسال">
+
+<input type="reset" value="إعادة تعيين">
+
+</div>
+
+</form>
+
+</div>
+
+<footer>
+
+📧
+
+<a href="mailto:mhand.alshabra73@gmail.com">
+
+school@gmail.com
+
+</a>
+
+|
+
+📞
+
++967777123456
+
+|
+
+
+📍
+
+الحوبان _ تعز _ اليمن
+<br><br>
+
+جميع الحقوق محفوظة © مدرسة الشعب 2026
+
+</footer>
+
+</body>
+</html>

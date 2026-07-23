@@ -8,81 +8,121 @@
 <style>
 
 body{
-    margin:0;
-    font-family:Tahoma, Arial;
-    background:#f4f4f4;
+margin:0;
+font-family:Tahoma;
+background:#eef3f7;
 }
 
 header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#006400;
+color:white;
+padding:20px;
+}
+
+.top{
+display:flex;
+align-items:center;
+justify-content:space-around;
+}
+
+.top img{
+width:250px;
+height:170px;
+border-radius:10px;
+}
+
+h1{
+margin:0;
+font-size:45px;
+}
+
+h3{
+margin-top:10px;
+}
+
+nav{
+background:#0b7d3b;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+marquee{
+background:#fff8dc;
+padding:12px;
+font-size:22px;
+color:red;
+font-weight:bold;
 }
 
 .container{
-    width:90%;
-    margin:auto;
-    padding:20px;
+width:90%;
+margin:auto;
+padding:20px;
 }
 
-.welcome{
-    text-align:center;
-    color:#198754;
-    font-size:32px;
-    font-weight:bold;
-    margin:20px 0;
+.info{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+margin-top:20px;
 }
 
-img{
-    width:100%;
-    max-width:700px;
-    display:block;
-    margin:auto;
-    border-radius:10px;
+.info img{
+width:350px;
+border-radius:10px;
+float:left;
+margin-right:20px;
 }
 
-h2{
-    color:#0d6efd;
+.clear{
+clear:both;
 }
 
-.cards{
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-top:20px;
+.section{
+background:white;
+margin-top:25px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 8px gray;
 }
 
-.card{
-    background:white;
-    width:220px;
-    padding:20px;
-    text-align:center;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
+.section a{
+display:block;
+padding:15px;
+font-size:22px;
+text-decoration:none;
+color:#006400;
 }
 
-.card a{
-    text-decoration:none;
-    color:white;
-    background:#198754;
-    padding:10px 20px;
-    border-radius:5px;
-    display:inline-block;
+.section a:hover{
+background:#d9f5dd;
 }
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
+margin-top:30px;
+background:#006400;
+color:white;
+padding:20px;
+text-align:center;
+font-size:18px;
 }
 
 footer a{
-    color:#ffc107;
-    text-decoration:none;
+color:white;
+text-decoration:none;
 }
 
 </style>
@@ -92,40 +132,114 @@ footer a{
 <body>
 
 <header>
+
+<div class="top">
+
+<div>
+
 <h1>مدرسة الشعب</h1>
+
+<h3>العلم نور والمستقبل يبدأ من هنا</h3>
+
+</div>
+
+<img src="school.jpg" alt="مدرسة الشعب">
+
+</div>
+
 </header>
+
+<nav>
+
+<a href="index.html">الرئيسية</a>
+
+<a href="primary.html">المرحلة الابتدائية</a>
+
+<a href="middle.html">المرحلة الإعدادية</a>
+
+<a href="secondary.html">المرحلة الثانوية</a>
+
+<a href="form.html">التسجيل</a>
+
+<a href="video.html">الفيديو</a>
+
+<a href="pdf.html">PDF</a>
+
+<a href="map.html">الخريطة</a>
+
+
+
+</nav>
+
+<marquee direction="right">
+
+أهلاً وسهلاً بكم في الموقع الإلكتروني لمدرسة الشعب، نتمنى لكم زيارة ممتعة ونسأل الله لكم التوفيق والنجاح.
+
+</marquee>
 
 <div class="container">
 
-<h2 class="welcome">أهلاً وسهلاً بكم في مدرسة الشعب</h2>
+<div class="info">
 
-<img src="school.jpg" alt="صورة المدرسة">
+<img src="school.jpg">
 
-<h2>نبذة عن المدرسة</h2>
+<h2>مرحباً بكم في مدرسة الشعب</h2>
+
+<p><b>اسم المدرسة:</b> مدرسة الشعب</p>
+
+<p><b>الموقع:</b> صنعاء - اليمن</p>
 
 <p>
-مدرسة الشعب من المدارس المتميزة التي تهدف إلى تقديم تعليم عالي الجودة،
-وتوفير بيئة تعليمية مناسبة تساعد الطلاب على التفوق والإبداع وتنمية مهاراتهم.
+
+مدرسة الشعب مؤسسة تعليمية تهدف إلى تقديم تعليم متميز وإعداد جيل واعٍ ومبدع علمياً وأخلاقياً.
+
 </p>
 
-<h2>الأقسام</h2>
+<div class="clear"></div>
 
-<div class="cards">
-
-<div class="card">
-<h3>المرحلة الابتدائية</h3>
-<a href="primary.html">الدخول</a>
 </div>
 
-<div class="card">
-<h3>المرحلة الإعدادية</h3>
-<a href="middle.html">الدخول</a>
+<div class="section">
+
+<h2>الأقسام التعليمية</h2>
+
+<hr>
+
+<a href="primary.html">📚 المرحلة الابتدائية</a>
+
+<hr>
+
+<a href="middle.html">📖 المرحلة الإعدادية</a>
+
+<hr>
+
+<a href="secondary.html">🎓 المرحلة الثانوية</a>
+
 </div>
 
-<div class="card">
-<h3>المرحلة الثانوية</h3>
-<a href="secondary.html">الدخول</a>
-</div>
+<div class="section">
+
+<h2>خدمات الموقع</h2>
+
+<hr>
+
+<a href="form.html">📝 تسجيل طالب</a>
+
+<hr>
+
+<a href="video.html">🎥 فيديو تعريفي</a>
+
+<hr>
+
+<a href="pdf.html">📄 عرض ملف PDF</a>
+
+<hr>
+
+<a href="map.html">📍 موقع المدرسة</a>
+
+<hr>
+
+<a href="internet.html">🌐 الانتقال إلى وزارة التربية والتعليم</a>
 
 </div>
 
@@ -133,15 +247,33 @@ footer a{
 
 <footer>
 
-<p>📧 <a href="mailto:mhand.alshabra73@gmail.com">school@gmail.com</a></p>
+📧
 
-<p>📞 +967 770 257 602</p>
+<a href="mailto:mhand.alshabra73@gmail.com">
 
-<p>🌐  الحوبان -تعز - اليمن </p>
+school@gmail.com
 
-<p>جميع الحقوق محفوظة © مدرسة الشعب 2026</p>
+</a>
+
+|
+
+📞
+
++967777123456
+
+|
+
+
+📍
+
+الحوبان _ تعز _ اليمن
+
+<br><br>
+
+جميع الحقوق محفوظة © مدرسة الشعب 2026
 
 </footer>
 
 </body>
+
 </html>

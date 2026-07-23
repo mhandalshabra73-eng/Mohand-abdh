@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
-<title>المرحلة الإعدادية</title>
+<title>موقع مدرسة الشعب</title>
 
 <style>
 
@@ -37,25 +38,26 @@ font-weight:bold;
 width:90%;
 margin:auto;
 padding:20px;
+text-align:center;
 }
 
-table{
+iframe{
 width:100%;
-border-collapse:collapse;
-background:white;
-box-shadow:0 0 10px gray;
+height:550px;
+border:5px solid #006400;
+border-radius:10px;
 }
 
-th{
+.back{
+margin-top:20px;
+}
+
+.back a{
 background:#006400;
 color:white;
-padding:15px;
-}
-
-td{
-padding:15px;
-text-align:center;
-border:1px solid #ccc;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
 }
 
 footer{
@@ -71,19 +73,6 @@ color:white;
 text-decoration:none;
 }
 
-.back{
-margin-top:20px;
-text-align:center;
-}
-
-.back a{
-background:#006400;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-border-radius:5px;
-}
-
 </style>
 
 </head>
@@ -92,9 +81,7 @@ border-radius:5px;
 
 <header>
 
-<h1>المرحلة الإعدادية</h1>
-
-<p>من الصف السابع إلى الصف التاسع</p>
+<h1>موقع مدرسة الشعب</h1>
 
 </header>
 
@@ -104,45 +91,31 @@ border-radius:5px;
 
 <a href="primary.html">الابتدائية</a>
 
+<a href="middle.html">الإعدادية</a>
+
 <a href="secondary.html">الثانوية</a>
+
+<a href="form.html">التسجيل</a>
+
+<a href="video.html">الفيديو</a>
+
+<a href="pdf.html">PDF</a>
 
 </nav>
 
 <div class="container">
 
-<h2>الرسوم السنوية</h2>
+<h2>موقع المدرسة على الخريطة</h2>
 
-<table>
+<iframe
+src="https://maps.google.com/maps?q=Al%20Hawban%20Taiz%20Yemen&output=embed">
+</iframe>
 
-<tr>
-<th>الصف</th>
-<th>الرسوم السنوية</th>
-</tr>
+<br><br>
 
-<tr>
-<td>الصف السابع</td>
-<td>35,000 ريال</td>
-</tr>
-
-<tr>
-<td>الصف الثامن</td>
-<td>38,000 ريال</td>
-</tr>
-
-<tr>
-<td>الصف التاسع</td>
-<td>40,000 ريال</td>
-</tr>
-
-</table>
-
-<div class="back">
-
-<a href="index.html">
-⬅ العودة إلى الصفحة الرئيسية
+<a href="index.html" class="back">
+العودة إلى الصفحة الرئيسية
 </a>
-
-</div>
 
 </div>
 
@@ -169,6 +142,7 @@ school@gmail.com
 
 الحوبان _ تعز _ اليمن
 <br><br>
+
 جميع الحقوق محفوظة © مدرسة الشعب 2026
 
 </footer>
