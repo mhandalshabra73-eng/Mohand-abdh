@@ -7,6 +7,10 @@
 
 <style>
 
+*{
+box-sizing:border-box;
+}
+
 body{
 margin:0;
 font-family:Tahoma;
@@ -24,12 +28,11 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 flex-wrap:wrap;
-gap:20px;
 }
 
 .top img{
-width:100%;
-max-width:320px;
+width:300px;
+max-width:100%;
 height:auto;
 border-radius:10px;
 }
@@ -92,8 +95,6 @@ margin:0 auto 20px auto;
 border-radius:10px;
 }
 
-
-
 .section{
 background:white;
 margin-top:25px;
@@ -112,6 +113,22 @@ color:#006400;
 
 .section a:hover{
 background:#d9f5dd;
+}
+
+.internet{
+background:white;
+margin-top:25px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 8px gray;
+text-align:center;
+}
+
+.internet iframe{
+width:100%;
+height:500px;
+border:2px solid green;
+border-radius:10px;
 }
 
 footer{
@@ -170,8 +187,6 @@ text-decoration:none;
 
 <a href="map.html">الخريطة</a>
 
-
-
 </nav>
 
 <marquee direction="right">
@@ -184,20 +199,17 @@ text-decoration:none;
 
 <div class="info">
 
-<img src="school.jpg" >
+<img src="school.jpg" alt="مدرسة الشعب">
 
 <h2>مرحباً بكم في مدرسة الشعب</h2>
 
 <p><b>اسم المدرسة:</b> مدرسة الشعب</p>
 
-<p><b>الموقع:</b> صنعاء - اليمن</p>
+<p><b>الموقع:</b> الحوبان - تعز - اليمن</p>
 
 <p>
-
 مدرسة الشعب مؤسسة تعليمية تهدف إلى تقديم تعليم متميز وإعداد جيل واعٍ ومبدع علمياً وأخلاقياً.
-
 </p>
-
 
 </div>
 
@@ -225,23 +237,31 @@ text-decoration:none;
 
 <hr>
 
-<a href="form.html">📝 تسجيل طالب</a>
+<a href="form.html">📝 تسجيل طالب</a>  <!-- iframe  داخلها    -->
 
 <hr>
 
-<a href="video.html">🎥 فيديو تعريفي</a>
+<a href="video.html">🎥 فيديو تعريفي</a>  <!--  iframe  داخلها فيديو باستخدام  -->
 
 <hr>
 
-<a href="pdf.html">📄 عرض ملف PDF</a>
+<a href="pdf.html">📄 عرض ملف PDF</a> <!--  iframe  داخلها عرض الملف باستخدام   -->
 
 <hr>
 
-<a href="map.html">📍 موقع المدرسة</a>
+<a href="map.html">📍 موقع المدرسة</a> <!-- iframe  داخلها الخريطه باستخدام   -->
 
-<hr>
+</div>
 
-<a href="internet.html">🌐 الانتقال إلى وزارة التربية والتعليم</a>
+<div class="internet">
+
+<h2> صفحة ويكبيديا </h2>
+
+
+
+<iframe src="https://www.wikipedia.org" title="صفحة من الإنترنت">
+
+</iframe>
 
 </div>
 
@@ -250,25 +270,17 @@ text-decoration:none;
 <footer>
 
 📧
-
 <a href="mailto:mhand.alshabra73@gmail.com">
-
 school@gmail.com
-
 </a>
 
 |
 
-📞
-
-+967770257602
+📞 +967770257602
 
 |
 
-
-📍
-
-الحوبان _ تعز _ اليمن
+📍 الحوبان - تعز - اليمن
 
 <br><br>
 
@@ -277,5 +289,4 @@ school@gmail.com
 </footer>
 
 </body>
-
 </html>
