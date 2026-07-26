@@ -127,13 +127,18 @@ margin-bottom:20px;
 margin-top:20px;
 }
 
-.section input,
+.section input:not([type="radio"]),
 .section select{
 width:100%;
 padding:10px;
 margin-top:5px;
 margin-bottom:15px;
 font-size:16px;
+}
+
+.section input[type="radio"]{
+width:auto;
+margin:0 5px;
 }
 
 .section input[type="submit"],
@@ -279,7 +284,7 @@ text-decoration:none;
 البريد الإلكتروني:<br>
 <input type="email" size="40"><br><br>
 الجنس:<br>
-
+<hr>
 <label>
 <input type="radio" name="gender" value="ذكر"> ذكر
 </label>
