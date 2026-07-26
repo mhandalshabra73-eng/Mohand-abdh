@@ -114,6 +114,43 @@ color:#006400;
 .section a:hover{
 background:#d9f5dd;
 }
+.section iframe{
+width:100%;
+height:500px;
+border:2px solid #006400;
+border-radius:10px;
+margin-top:15px;
+margin-bottom:20px;
+}
+
+.section form{
+margin-top:20px;
+}
+
+.section input,
+.section select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+font-size:16px;
+}
+
+.section input[type="submit"],
+.section input[type="reset"]{
+width:auto;
+padding:10px 20px;
+background:#006400;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.section input[type="submit"]:hover,
+.section input[type="reset"]:hover{
+background:#0b7d3b;
+}
 
 .internet{
 background:white;
@@ -179,13 +216,6 @@ text-decoration:none;
 
 <a href="secondary.html">المرحلة الثانوية</a>
 
-<a href="form.html">التسجيل</a>
-
-<a href="video.html">الفيديو</a>
-
-<a href="pdf.html">PDF</a>
-
-<a href="map.html">الخريطة</a>
 
 </nav>
 
@@ -233,37 +263,100 @@ text-decoration:none;
 
 <div class="section">
 
+
+
 <h2>خدمات الموقع</h2>
 
 <hr>
 
-<a href="form.html">📝 تسجيل طالب</a>  <!-- iframe  داخلها    -->
+<h3>📝 تسجيل طالب</h3>
+
+<form>
+
+الاسم الكامل:<br>
+<input type="text" size="40"><br><br>
+
+البريد الإلكتروني:<br>
+<input type="email" size="40"><br><br>
+الجنس:<br>
+
+<label>
+<input type="radio" name="gender" value="ذكر"> ذكر
+</label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<label>
+<input type="radio" name="gender" value="أنثى"> أنثى
+</label>
+<br><br>
+
+<br><br>
+المرحلة الدراسية:<br>
+
+<select>
+
+<option>المرحلة الابتدائية</option>
+
+<option>المرحلة الإعدادية</option>
+
+<option>المرحلة الثانوية</option>
+
+</select>
+
+<br><br>
+
+<input type="submit" value="إرسال">
+
+<input type="reset" value="مسح">
+
+</form>
 
 <hr>
 
-<a href="video.html">🎥 فيديو تعريفي</a>  <!--  iframe  داخلها فيديو باستخدام  -->
-
-<hr>
-
-<a href="pdf.html">📄 عرض ملف PDF</a> <!--  iframe  داخلها عرض الملف باستخدام   -->
-
-<hr>
-
-<a href="map.html">📍 موقع المدرسة</a> <!-- iframe  داخلها الخريطه باستخدام   -->
-
-</div>
-
-<div class="internet">
-
-<h2> صفحة ويكبيديا </h2>
-
-
-
-<iframe src="https://www.wikipedia.org" title="صفحة من الإنترنت">
-
+<h3>🎥 الفيديو التعريفي</h3>
+<iframe
+width="900"
+height="500"
+src="https://www.youtube.com/embed/ScMzIvxBSi4"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen>
 </iframe>
 
-</div>
+<hr>
+
+<h3>📄 ملف PDF</h3>
+
+<iframe
+src="oop.pdf"
+width="100%"
+height="500">
+</iframe>
+
+<hr>
+
+<h3>📍 موقع المدرسة</h3>
+
+<iframe
+src="https://maps.google.com/maps?q=Al%20Hawban%20Taiz%20Yemen&output=embed"
+width="100%"
+height="450">
+</iframe>
+
+<hr>
+
+<h3>🌐 صفحة من الإنترنت</h3>
+
+<iframe
+src="https://www.wikipedia.org"
+width="100%"
+height="500">
+</iframe>
+
+<hr>
 
 </div>
 
